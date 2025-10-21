@@ -1,58 +1,16 @@
-# PT Asrindo Environt Investama - Company Profile Website
-Access the live site at:  
-   🌐 **[https://asrindo.com](https://asrindo.com)**
+# React + Vite
 
-**PT Asrindo Environt Investama** is a modern corporate profile website built with **React.js** and **TailwindCSS**, representing an Indonesian environmental consulting and engineering firm.  
-The site is designed with a clean **navy-gold gradient aesthetic**, emphasizing professionalism, sustainability, and technological innovation.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🧱 System Overview
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-The website serves as a digital portfolio and company profile platform for PT Asrindo Environt Investama.  
-It highlights the company’s services, expertise, and achievements while providing a contact channel for potential clients.  
-The system integrates a **PHP mail contact form**, allowing visitors to send inquiries directly without authentication.
+## React Compiler
 
----
+The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## ⚙️ Core Features
+## Expanding the ESLint configuration
 
-- 🏠 **Home Page** — Animated hero section with gradient overlay and core company values.  
-- 🏢 **About Section** — Overview of Asrindo’s history, mission, and operational focus.  
-- 🔧 **Services Section** — List of environmental and engineering consulting services.  
-- 🤝 **Clients & Partners** — Display of partner logos and collaborations.  
-- 🖼️ **Project Showcase** — Visual highlights of past and ongoing projects.  
-- 📞 **Contact Form** — Integrated PHP backend for direct message delivery to company email.  
-- 🌐 **Responsive Design** — Fully optimized for desktop, tablet, and mobile.  
-- 💫 **Smooth Animations** — Elegant motion transitions using AOS and Framer Motion.
-
----
-
-## 🧩 Technology Stack
-
-| Layer | Technology |
-|-------|-------------|
-| **Frontend** | React.js (Vite) |
-| **Styling** | TailwindCSS |
-| **Animation** | Framer Motion, AOS |
-| **Backend (Contact Form)** | PHP Mail |
-| **Deployment** | Hostinger Shared Hosting |
-| **Assets** | Custom images, gradient overlays, SVG icons |
-
----
-
-## 📦 Project Structure
-
-```
-📦 asrindo-company-profile
- ┣ 📁 public/                 # Static assets (logo, images, etc.)
- ┣ 📁 src/
- ┃ ┣ 📁 components/           # Reusable UI components (Navbar, Footer, Hero, etc.)
- ┃ ┣ 📁 pages/                # Page sections (Home, About, Services, Contact)
- ┃ ┣ 📄 App.jsx               # Main application component
- ┃ ┣ 📄 main.jsx              # React entry point
- ┗ 📄 tailwind.config.js      # Tailwind configuration
----
-
-## 🏷️ Keywords
-`React` `TailwindCSS` `PHP Mail` `Company Profile` `Asrindo` `Environmental Consulting` `Engineering` `Corporate Website`
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@keyframes scroll-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll-x {
+  display: flex;
+  width: max-content;
+  animation: scroll-x 30s linear infinite;
+}
+
+/* ========== CUSTOM LOADING ANIMATION ========== */
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 2.5s linear infinite;
+}
+
+/* Fade-in & fade-out global animasi */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.8s ease-in forwards;
+}
+
+/* ============================================= */
+/* LOADING SPINNER ANIMASI CUSTOM                */
+/* ============================================= */
+
+/* Gradient biru yang berputar elegan */
+@keyframes spin-gradient {
+  0% {
+    transform: rotate(0deg);
+    background: conic-gradient(
+      from 0deg,
+      #0a1d4a 0deg,
+      #1e3a8a 120deg,
+      #3b82f6 240deg,
+      #0a1d4a 360deg
+    );
+  }
+  100% {
+    transform: rotate(360deg);
+    background: conic-gradient(
+      from 360deg,
+      #0a1d4a 0deg,
+      #1e3a8a 120deg,
+      #3b82f6 240deg,
+      #0a1d4a 360deg
+    );
+  }
+}
+
+/* Kelas animasinya */
+.animate-spin-gradient {
+  animation: spin-gradient 3s linear infinite;
+  mask-image: radial-gradient(circle, transparent 60%, black 61%);
+  -webkit-mask-image: radial-gradient(circle, transparent 60%, black 61%);
+  background-size: 200% 200%;
+  background-position: center;
+}
+
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out both;
+}
+
+@keyframes fadeInHero {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInHero {
+  animation: fadeInHero 1s ease-out both;
+}
